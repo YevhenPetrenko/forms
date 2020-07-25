@@ -1,0 +1,16 @@
+fieldset {
+    border: solid 1px black;
+}
+
+.fieldSetEmail{
+    width: 500px;
+    height: 500px;
+    padding: 2px 2px;
+}
+
+.emailInput:valid{
+    border: 5px solid green;
+}
+.emailInput:invalid{
+    border: 5px solid red;
+}

@@ -7,6 +7,86 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<form>
+    <fieldset>
+        <legend>Test legend</legend>
+        <div>
+            <label>
+                First Name
+                <input type="text">
+            </label>
+        </div>
+        <div>
+            <label for="name">Last Name</label>
+            <input type="text" id="name">
+        </div>
 
+        <div>
+            <label>
+                Email
+                <input type="email">
+            </label>
+
+        </div>
+    </fieldset>
+
+
+    <div>
+        <label>
+            Password
+            <input type="password">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            Is male?
+            <input type="checkbox">
+        </label>
+    </div>
+    <div>
+        <label>
+            Radio
+            <div>
+                <input type="radio" value="value1" name="nameRadio" id="variantOne">
+                <label for="variantOne">Label1</label>
+            </div>
+            <div>
+                <input type="radio" value="value2" name="nameRadio" id="variantTwo">
+                <label for="variantTwo">Label2</label>
+            </div>
+            <div>
+                <input type="radio" value="value3" name="nameRadio" id="variantThree">
+                <label for="variantThree">Label3</label>
+            </div>
+
+        </label>
+    </div>
+<div>
+    <label for="multiSelect">Multi Select</label>
+    <select name="choices" id="multiSelect">
+        <option value="choice" disabled selected>Choose something</option>
+        <option value="value1">Opt1</option>
+        <option value="value2">Opt2</option>
+        <option value="value3">Opt2</option>
+    </select>
+</div>
+<div>
+    <label for="placeHolder">Place holder</label>
+    <input type="text" id="placeHolder" placeholder="\">
+</div>
+    <div>
+        <label for="textArea">Text Area</label>
+        <textarea id="textArea" cols="50" rows="2"></textarea>
+    </div>
+    <button id="button" disabled>Test</button>
+    <label for="buttonSubmit"></label>
+    <input id="buttonSubmit" type="submit" value="Submit Button">
+    <fieldset class="fieldSetEmail">
+        <legend>Valid inputs</legend>
+        <label for="emailInput">Email</label>
+        <input class="emailInput" type="email" id="emailInput" name="emailInp">
+    </fieldset>
+</form>
 </body>
 </html>
