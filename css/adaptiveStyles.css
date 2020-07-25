@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+
+    height: 900px;
+    border: 2px solid black;
+}
+.big{
+    width: 150px !important;
+}
+.child:nth-child(2n){
+    <!-- order: 1; -->
+}
+.child:nth-child(2){
+    flex-shrink: 0;
+}
+.child{
+    flex-grow: 1;
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
